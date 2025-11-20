@@ -1,0 +1,48 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model User {
+  id           String   @id @default(cuid())
+  name         String
+  email        String   @unique
+  passwordHash String
+  role         String   @default("B2C") // B2C | B2B_PENDING | B2B_APPROVED | ADMIN
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+}
+
+model Product {
+  id          String   @id @default(cuid())
+  name        String
+  slug        String   @unique
+  description String?
+  images      String   // JSON array of image URLs
+  category    String   // SNACK | DRINK | ENERGY | TREND | MACHINE | PAYMENT_SYSTEM
+  priceB2C    Float?
+  priceB2B    Float?
+  specs       String?  // JSON for machines
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
+model Location {
+  id          String   @id @default(cuid())
+  name        String
+  address     String
+  city        String
+  image       String?
+  description String?
+  coordinates String?  // JSON for lat/lng
+  createdAt   DateTime @default(now())
+  updatedAt   DateTime @updatedAt
+}
+
