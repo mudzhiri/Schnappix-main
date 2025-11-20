@@ -22,7 +22,7 @@ export default function ContactPage() {
           <CardHeader>
             <CardTitle>Message Sent!</CardTitle>
             <CardDescription>
-              We'll get back to you as soon as possible.
+              We&apos;ll get back to you as soon as possible.
             </CardDescription>
           </CardHeader>
         </Card>
@@ -38,7 +38,7 @@ export default function ContactPage() {
           <CardHeader>
             <CardTitle>Get in Touch</CardTitle>
             <CardDescription>
-              Have a question? Send us a message and we'll respond as soon as possible.
+              Have a question? Send us a message and we&apos;ll respond as soon as possible.
             </CardDescription>
           </CardHeader>
           <CardContent>

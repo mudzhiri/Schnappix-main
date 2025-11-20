@@ -58,7 +58,7 @@ export default function B2BRegisterPage() {
           <CardHeader>
             <CardTitle>Registration Successful!</CardTitle>
             <CardDescription>
-              Your account is pending approval. You'll receive an email once approved.
+              Your account is pending approval. You&apos;ll receive an email once approved.
             </CardDescription>
           </CardHeader>
           <CardContent>

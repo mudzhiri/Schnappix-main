@@ -72,7 +72,7 @@ export default function B2BPage() {
         <h2 className="font-heading text-3xl font-bold mb-4">How It Works</h2>
         <ol className="space-y-4 list-decimal list-inside text-muted-foreground">
           <li>Register your business account</li>
-          <li>Wait for admin approval (you'll receive an email)</li>
+          <li>Wait for admin approval (you&apos;ll receive an email)</li>
           <li>Once approved, access NET pricing on all products</li>
           <li>Place wholesale orders with exclusive B2B pricing</li>
         </ol>

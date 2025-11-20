@@ -25,12 +25,12 @@ export default async function B2BProductsPage() {
             <AlertCircle className="h-12 w-12 text-muted-foreground mb-4" />
             <CardTitle>Account Pending Approval</CardTitle>
             <CardDescription>
-              Your B2B account is pending admin approval. You'll receive an email once your account is approved.
+              Your B2B account is pending admin approval. You&apos;ll receive an email once your account is approved.
             </CardDescription>
           </CardHeader>
           <CardContent>
             <p className="text-muted-foreground">
-              Once approved, you'll be able to view NET pricing on all products.
+              Once approved, you&apos;ll be able to view NET pricing on all products.
             </p>
           </CardContent>
         </Card>
